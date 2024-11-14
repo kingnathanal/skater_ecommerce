@@ -62,5 +62,6 @@ jobs:
         script: |
           cd /opt/skater
           sudo ./shutdown.sh
+          sudo rm -f /opt/skater/app.jar 
           sudo mv -f /home/ubuntu/skater/app.jar /opt/skater/app.jar
           sudo ./start.sh
