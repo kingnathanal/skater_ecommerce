@@ -62,5 +62,5 @@ jobs:
         script: |
           cd /opt/skater
           sudo ./shutdown.sh
-          sudo mv -f /home/ubuntu/skater/build/* /opt/skater/*
+          sudo mv -f /home/ubuntu/skater/build/* /opt/skater/build/*
           sudo ./start.sh
