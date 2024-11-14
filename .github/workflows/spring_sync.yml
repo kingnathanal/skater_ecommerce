@@ -60,6 +60,6 @@ jobs:
         username: ${{ secrets.EC2_USER }}
         key: ${{ secrets.EC2_KEY }}
         script: |
-          sudo systemctl stop skater
+          sudo ./shutdown.sh
           sudo mv /home/ubuntu/skater/app.jar /opt/skater/app.jar
-          sudo nohup java -jar /opt/skater/app.jar > output.log &
+          sudo ./start.sh
