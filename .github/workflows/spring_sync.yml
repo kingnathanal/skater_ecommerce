@@ -60,6 +60,6 @@ jobs:
         username: ${{ secrets.EC2_USER }}
         key: ${{ secrets.EC2_KEY }}
         script: |
-          sudo ./shutdown.sh
+          sudo ./opt/skater/shutdown.sh
           sudo mv /home/ubuntu/skater/app.jar /opt/skater/app.jar
-          sudo ./start.sh
+          sudo ./opt/skater/start.sh
