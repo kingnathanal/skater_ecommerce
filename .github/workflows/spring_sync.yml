@@ -62,4 +62,4 @@ jobs:
         script: |
           sudo systemctl stop skater
           sudo mv /home/ubuntu/skater/app.jar /opt/skater/app.jar
-          sudo systemctl start skater
+          sudo nohup java -jar /opt/skater/app.jar > output.log &
